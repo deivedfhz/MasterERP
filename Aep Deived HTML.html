@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sistema de multas</title>
+</head>
+<body>
+<form action="" method="post">
+<center><h2>CADASTRO DE INFRAÇÕES</h2></center><br>
+<fieldset>
+<legend><h4>Dados do Veiculo</h4></legend>
+<label>Placa:</label><input name="placa" type="text" placeholder="ABC-1234" size="8" maxlength="8">
+<label id="renavam">Renavam:</label><input name="renavam" type="text" placeholder="12345678900" size="11" maxlength="11">
+<label>Modelo:</label><select name="modelo" size="1">
+<option value="C-100">C-100</option>
+<option value="CB-300">CB-300</option>
+<option value="CB-300R">CB-300R</option>
+<option value="CG-125 FAN">CG-125 FAN</option>
+<option value="CG-150">CG-150</option>
+<option value="CBR-1000 RR">CBR-1000 RR</option>
+<option value="SHADOW-600 VT C">SHADOW-600 VT C</option>
+</select>
+<label>Marca:</label><select name="marca" size="1">
+<option value="KAWASAKI">KAWASAKI</option>
+<option value="SUZUKI">SUZUKI</option>
+<option value="YAMAHA">YAMAHA</option>
+<option value="HONDA">HONDA</option>
+<option value="DAFRA">DAFRA</option>
+</select>
+
+<label>Categoria:</label><select name="categoria" size="1">
+<option value="MOTOCICLETA">MOTOCICLETA</option>
+<option value="AUTOM/PASSAG">AUTOMOV/PASSAG</option>
+</select>
+
+</fieldset><br>
+<fieldset>
+<legend><h4>Dados do Proprietário</h4></legend>
+<label>Nome:</label><input type="text" placeholder="Nome Completo" size="40" />
+<label>CPF/CNPJ:</label><input type="text" placeholder="01.987.660/0001.15" size="18"/>
+<label>Data Compra:</label><input type="date"/>
+</fieldset>
+<br>
+<fieldset><legend><h4>Infrações</h4></legend>
+<center>
+<table border="1">
+
+<tr>
+<th>CÓDIGO</th>
+<th>DESCRIÇÃO</th>
+<th>PONTOS</th>
+<th>VALOR</th>
+<th>DATA</th>
+<th>HORA</th>
+</tr>
+<tr>
+<th>33</th>
+<th>Estacionar em Local Proibido</th>
+<th>5</th>
+<th>85,90</th>
+<th>01/06/2017</th>
+<th>12:05</th>
+</tr>
+<tr>
+<th>33</th>
+<th>Estacionar em Local Proibido</th>
+<th>5</th>
+<th>85,90</th>
+<th>05/06/2017</th>
+<th>13:05</th>
+</tr>
+<tr>
+<th>45</th>
+<th>Dirigir acima do limite permitido</th>
+<th>7</th>
+<th>930,55</th>
+<th>12/06/2017</th>
+<th>9:05</th>
+</tr>
+
+</table>
+</center>
+<div align="right">
+<input type="button" name="meu_botao1" value="Adicionar"/>
+</div>
+</fieldset>
+<div align="right">
+<input type="button" name="meu_botao2" value="Salvar"/>
+<input type="button" name="meu_botao3" value="Imprimir"/>
+<input type="button" name="meu_botao4" value="Cancelar"/>
+</div>
+</form>
+
+</body>
+</html>
