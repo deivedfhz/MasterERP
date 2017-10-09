@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-beta.1.css" type="text/css"> </head>
 
 <body class="bg-secondary">
-  <nav class="navbar navbar-expand-md bg-info navbar-dark">
+  <nav class="navbar navbar-expand-md bg-info navbar-dark" color="#666">
     <div class="container">
       <a class="navbar-brand" href="#">PORTARIA</a>
       <button class="navbar-toggler navbar-toggler-right" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"> <span class="navbar-toggler-icon"></span> </button>
@@ -18,11 +18,10 @@
             <a class="nav-link" href="#"></a>
           </li>
         </ul>
-        <form class="form-inline m-0">
+        <form action="#" method="post" class="form-inline m-0">
           <input class="form-control mr-2" type="text" placeholder="Usuário">
           <input class="form-control mr-2" type="text" placeholder="Senha">
           <button class="btn" type="submit">Entrar</button>
-        </form>
       </div>
     </div>
   </nav>
@@ -41,8 +40,7 @@
         <div class="col-md-7">
           <div class="blockquote">
             <p>Nome:</p>
-            <input class="form-control mr-2" type="text">
-            <div class="blockquote-footer">Someone famous</div>
+            <input type="text" required="required" name="PREENCHA O CAMPO">
           </div>
         </div>
       </div>
@@ -50,8 +48,7 @@
         <div class="col-md-4">
           <div class="blockquote">
             <p>Documento (RG OU CPF):</p>
-            <input class="form-control mr-2" type="text">
-            <div class="blockquote-footer">Someone famous</div>
+            <input type="text" required="required" name="PREENCHA O CAMPO">      
           </div>
         </div>
       </div>
@@ -93,7 +90,6 @@
             <input type="text" name="dia" size="2" maxlength="2" value="dd">
             <input type="text" name="mes" size="2" maxlength="2" value="mm">
             <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
-            <div class="blockquote-footer">Someone famous</div>
           </div>
         </div>
       </div>
@@ -103,7 +99,9 @@
     </div>
   </div>
   <center>
-    <input type="submit" name="b1" value="Finalizar Inclusão"> </center>
+    <input type="submit" name="b1" value="Finalizar Inclusão" onClick="alert(CADASTRO EFETUADO COM SUCESSO)"> </center>
+	</form>
+
 </body>
 
 </html>
